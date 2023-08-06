@@ -128,6 +128,11 @@ Concepts to consider
 - **Given** that a value is stored in the `currentNumber` variable.
 - **Then** return a string that states, "Is your number <`currentNumber`>?" within the `startCompGuess()` function.
 
+
+<!-- NOTES TO SELF FOR UPLOADING PROJECT -->
+<!-- GIT add . -->
+<!-- GIT commit -m "message" -->
+<!-- GIT push origin main -->
 ### Ticket: `#U2_03`
 - **Given** that there is a variable to store a current value.
 - **Then** create a new function outside of all other functions as a **block body arrow function**, called `createGuess`.
