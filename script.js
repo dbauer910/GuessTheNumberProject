@@ -1,19 +1,40 @@
 /* Within the function called "randomNumber", it allows for a two parameters to be passed. One will be the value that is taken from the input from the HTML document. The other is a random number that has been generated.
     - Include a check to see if the user inputs a value out of scope of the desired values (1-100)
-    - It should be compared to a variable named: numberToGuess
+    - It should be compared to a variable named: numberToGuess [or... computersNumber like we did in class?]
 */
+
+let functionCounter = 0;
 
 function randomNumber(userGuess, computersNumber) {
 
     // YOUR CODE BELOW
 
+    if (userGuess < 1 || userGuess > 100) {
+        return "Place input a number between 1 and 100";
+    } else if (userGuess < computersNumber) {
+        functionCounter++;
+        return "Higher";
+    } else if (userGuess > computersNumber) {
+        functionCounter++;
+        return "Lower";
+    } else if (userGuess == computersNumber) {
+        return `That's it! The number was ${computersNumber}! It took you ${functionCounter} guesses.`;
+    }
+    };
 
-
+    // let guessAmount = 
 
     // YOUR CODE ABOVE
-};
 
+// Create a variable that will track the number of guesses by the user and update the return within randomNumber() to display how many guesses it took to get the correct value.
+/*
+- Create a variable
+    - that tracks # of guesses
+        - by the user
 
+- return within randomNumber()
+    - displays # of guesses
+*/
 
 //* Have the Computer Guess your Number ---------------------------------------------
 /* 
