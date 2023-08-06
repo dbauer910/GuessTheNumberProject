@@ -60,6 +60,14 @@ function startCompGuess(num) {
 
 }
 
+let createGuess = () => {
+        currentNumber = Math.floor(Math.random() * 100) + 1;
+        return currentNumber.random
+    }
+    
+createGuess();
+
+
 function compGuess(reply) {
     /* 
     *   The parameter "reply" will either be passing "lower", "correct", or "higher". This should be considered when evaluating th elogic and response.
